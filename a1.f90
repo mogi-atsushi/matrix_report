@@ -7,7 +7,7 @@ program matrix_report_a1
   implicit none
   integer :: nx = 20, ny = 20, i, j, k, n, info
   integer, allocatable :: f(:,:,:), ipiv(:)
-  real(8), allocatable :: a(:,:), b(:), u(:), ux(:,:), uy(:,:)
+  real(8), allocatable :: a(:,:), b(:), u(:)
   real(8) :: lambda = 1.0_8, mu = 1.0_8, dx, dy, c = -1.0_8
 
   dx = 1.0_8/nx
