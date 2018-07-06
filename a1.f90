@@ -51,9 +51,9 @@ program matrix_report_a1
 
         a(f(i,j,2), f(i,j-1,2)) = (lambda + 2.0_8*mu)/(dy**2.0_8)
         a(f(i,j,2), f(i,j+1,2)) = (lambda + 2.0_8*mu)/(dy**2.0_8)
-        a(f(i,j,2), f(i,j,2)) = -(2.0_8*lambda + 4.0_8*mu)/(dy**2) -(2*mu)/(dx**2.0_8)
-        a(f(i,j,2), f(i-1,j,2)) = mu/(dx**2)
-        a(f(i,j,2), f(i+1,j,2)) = mu/(dx**2)
+        a(f(i,j,2), f(i,j,2)) = -(2.0_8*lambda + 4.0_8*mu)/(dy**2.0_8) -(2.0_8*mu)/(dx**2.0_8)
+        a(f(i,j,2), f(i-1,j,2)) = mu/(dx**2.0_8)
+        a(f(i,j,2), f(i+1,j,2)) = mu/(dx**2.0_8)
         a(f(i,j,2), f(i-1,j-1,1)) = (lambda + mu)/(4.0_8*dx*dy)
         a(f(i,j,2), f(i-1,j+1,1)) = -(lambda + mu)/(4.0_8*dx*dy)
         a(f(i,j,2), f(i+1,j-1,1)) = -(lambda + mu)/(4.0_8*dx*dy)
